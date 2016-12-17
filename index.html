@@ -3,15 +3,30 @@
 	<meta charset="UTF-8">
 	<title>Sign Up For The Sea of Analogia</title>
 	<meta name="description" content="Get your account today and get started">
-	<!-- Styles -->
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	
 	<!-- reset -->
 	 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+	 <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 <body>
-	<div class="logo">
+	<header class="logo">
 		<img src="images/logo.png" alt="">
-	</div>
+	</header>
+	<main>
+		<form class="sign-up" action="/signup/" method="post">
+			<fieldset>
+			<legend>Sign up</legend>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" placeholder="foo@bar.com">
+			<label for="password">Password</label>
+			<input type="password" name="password" id="password" placeholder="1234Passw0rd">
+			</fieldset>
+			<button>Sign Up</button>
+			<p><a href="">Forgot Password?</a></p>
+		</form>
+		<p>Already have an account?<a href="">Log in</a></p>
+	</main>
 	
 </body>
 </html>
