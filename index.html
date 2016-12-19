@@ -18,10 +18,10 @@
 		<form class="sign-up" action="/signup/" method="post">
 			<fieldset>
 			<legend>Sign up</legend>
-			<label for="email">Email</label>
-			<input type="email" name="email" id="email" placeholder="foo@bar.com">
+			<label for="email" required>Email</label>
+			<input type="email" name="email" id="email" placeholder="foo@bar.com" required>
 			<label for="password">Password</label>
-			<input type="password" name="password" id="password" placeholder="1234Passw0rd">
+			<input type="password" pattern='[0-9/A-Z/a-z]'name="password" id="password" placeholder="1234Passw0rd" required>
 			</fieldset>
 			<button>Sign Up</button>
 			<p><a href="/forgot-password/new">Forgot Password?</a></p>
